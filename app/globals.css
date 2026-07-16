@@ -1,26 +1,131 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html{
+  scroll-behavior:smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+body{
+    margin:0;
+    background:#ffffff;
+    color:#222;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+
+a{
+  text-decoration:none;
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+.container{
+  width:min(1200px,90%);
+  margin:auto;
+}
+
+section{
+  padding:90px 0;
+}
+
+.btn{
+  display:inline-block;
+  padding:16px 34px;
+  border-radius:12px;
+  font-weight:bold;
+  transition:.3s;
+  cursor:pointer;
+}
+
+.btn-line{
+  background:#06C755;
+  color:white;
+}
+
+.btn-line:hover{
+  transform:translateY(-3px);
+  box-shadow:0 15px 35px rgba(6,199,85,.3);
+}
+
+.btn-outline{
+  border:2px solid #009b4e;
+  color:#009b4e;
+}
+
+.btn-outline:hover{
+  background:#009b4e;
+  color:white;
+}
+
+.title{
+  font-size:48px;
+  color:#009b4e;
+  margin-bottom:20px;
+}
+
+.subtitle{
+  font-size:20px;
+  color:#555;
+  line-height:1.8;
+}.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+section{
+    padding:80px 0;
+}
+
+.title{
+    font-size:64px;
+    color:#009b4e;
+    font-weight:bold;
+    line-height:1.2;
+}
+
+.subtitle{
+    font-size:24px;
+    margin-top:20px;
+    line-height:1.7;
+}
+
+.btn{
+    display:inline-block;
+    padding:18px 38px;
+    border-radius:12px;
+    font-weight:bold;
+    text-decoration:none;
+    transition:.25s;
+}
+
+.btn-line{
+    background:#06C755;
+    color:white;
+}
+
+.btn-line:hover{
+    transform:translateY(-3px);
+}
+
+.btn-outline{
+    border:2px solid #009b4e;
+    color:#009b4e;
+}
+
+nav a{
+    color:#333;
+    text-decoration:none;
+}
+
+nav a:hover{
+    color:#06C755;
 }
