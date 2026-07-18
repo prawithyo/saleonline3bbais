@@ -87,6 +87,7 @@ export default function Home() {
 
     {/* LINE Button */}
     <a
+    className="desktopLineButton"
       href="https://lin.ee/Uc3LJUW"
       target="_blank"
       rel="noopener noreferrer"
