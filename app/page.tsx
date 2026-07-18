@@ -126,10 +126,9 @@ export default function Home() {
         }}
       >
         <div
+         className="heroGrid"
           style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gap: "60px",
+    
             alignItems: "center",
             width: "100%",
             maxWidth: "1200px",
@@ -177,6 +176,7 @@ export default function Home() {
               }}
             >
               <a
+               className="desktopLineButton"
                 href="https://lin.ee/Uc3LJUW"
                 target="_blank"
                 style={{
