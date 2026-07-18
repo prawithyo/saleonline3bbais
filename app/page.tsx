@@ -211,7 +211,7 @@ export default function Home() {
               </a>
 
               <a
-                href="tel:020000000"
+                href="tel:0982799863"
                 style={{
                   border: "2px solid #009845",
                   color: "#009845",
