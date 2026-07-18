@@ -1,9 +1,14 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Home() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <main>
-      {/* ================= Header ================= */}
+     
 
 <header
   style={{
@@ -37,12 +42,23 @@ export default function Home() {
         }}
       />
     </a>
-
+<button
+  onClick={() => setMenuOpen(!menuOpen)}
+  style={{
+    fontSize: "30px",
+    background: "none",
+    border: "none",
+    cursor: "pointer",
+  }}
+  className="mobileMenuButton"
+>
+  ☰
+</button>
     {/* Menu */}
     <nav
+    className={menuOpen ? "mobileNav open" : "mobileNav"}
       style={{
-        display: "flex",
-        gap: "35px",
+       gap: "35px",
         alignItems: "center",
         fontSize: "17px",
         fontWeight: "600",
