@@ -87,10 +87,11 @@ export default function Home() {
       </a>
 
       <a
-        href="https://www.ais.th/consumers/package/internet/coverage"
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ color: "#222", textDecoration: "none" }}
+       
+   href="https://lin.ee/Uc3LJUw"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ color: "#222", textDecoration: "none" }}
       >
         เช็กพื้นที่บริการ
       </a>
@@ -370,7 +371,8 @@ export default function Home() {
   >
     {/* เช็กพื้นที่ */}
     <a
-      href="https://www.ais.th/consumers/package/internet/coverage"
+      
+href="https://line.me/R/oaMessage/%40saleonline_LINE_ID/?สวัสดีครับ%0A%0Aต้องการตรวจสอบพื้นที่ติดตั้งอินเทอร์เน็ตบ้าน%0A%0A📍กรุณาส่งพิกัดบ้านหรือส่งลิงก์ Google Maps"
       target="_blank"
       rel="noopener noreferrer"
       className="serviceCard"
@@ -385,10 +387,11 @@ export default function Home() {
     >
       <div style={{ fontSize: "34px" }}>📍</div>
 
-      <h3>เช็กพื้นที่บริการ</h3>
+      <h3>📍 ตรวจสอบพื้นที่ติดตั้งฟรี</h3>
 
       <p style={{ color: "#666" }}>
-        ตรวจสอบก่อนติดตั้งอินเทอร์เน็ต
+        ส่งพิกัดบ้านผ่าน LINE
+เพื่อตรวจสอบพื้นที่ให้บริการฟรี
       </p>
     </a>
 
