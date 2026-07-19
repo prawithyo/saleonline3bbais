@@ -43,7 +43,19 @@ export default function Home() {
       />
     </a>
 <button
-  onClick={() => setMenuOpen(!menuOpen)}
+ onClick={(e) => {
+  e.preventDefault();
+
+  window.gtag?.("event", "line_click");
+
+  setTimeout(() => {
+    window.open(
+      "https://lin.ee/Uc3LJUw",
+      "_blank",
+      "noopener,noreferrer"
+    );
+  }, 300);
+}}
   style={{
     fontSize: "30px",
     background: "none",
@@ -105,7 +117,19 @@ export default function Home() {
     <a
     className="desktopLineButton"
       href="https://lin.ee/Uc3LJUW"
-      
+     onClick={(e) => {
+  e.preventDefault();
+
+  window.gtag?.("event", "line_click");
+
+  setTimeout(() => {
+    window.open(
+      "https://lin.ee/Uc3LJUw",
+      "_blank",
+      "noopener,noreferrer"
+    );
+  }, 300);
+}}
       target="_blank"
       rel="noopener noreferrer"
       style={{
@@ -196,7 +220,22 @@ export default function Home() {
               <a
                className="desktopLineButton"
                 href="https://lin.ee/Uc3LJUW"
+                onClick={(e) => {
+  e.preventDefault();
+
+ window.gtag?.("event", "line_click");
+
+  setTimeout(() => {
+    window.open(
+      "https://lin.ee/Uc3LJUw",
+      "_blank",
+      "noopener,noreferrer"
+    );
+  }, 300);
+}}
+  
                 target="_blank"
+                rel="noopener noreferrer"
                 style={{
                   background: "#00c853",
                   color: "#fff",
