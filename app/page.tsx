@@ -57,7 +57,7 @@ export default function Home() {
       />
     </a>
 <button
- onClick={openLine}
+ onClick={() => setMenuOpen(!menuOpen)}
   style={{
     fontSize: "30px",
     background: "none",
