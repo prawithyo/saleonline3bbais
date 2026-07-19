@@ -6,6 +6,20 @@ import { useState } from "react";
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const openLine = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+
+    window.gtag?.("event", "line_click");
+
+    setTimeout(() => {
+      window.open(
+        "https://lin.ee/Uc3LJUw",
+        "_blank",
+        "noopener,noreferrer"
+      );
+    }, 300);
+  };
+
   return (
     <main>
      
@@ -43,19 +57,7 @@ export default function Home() {
       />
     </a>
 <button
- onClick={(e) => {
-  e.preventDefault();
-
-  window.gtag?.("event", "line_click");
-
-  setTimeout(() => {
-    window.open(
-      "https://lin.ee/Uc3LJUw",
-      "_blank",
-      "noopener,noreferrer"
-    );
-  }, 300);
-}}
+ onClick={openLine}
   style={{
     fontSize: "30px",
     background: "none",
@@ -117,19 +119,7 @@ export default function Home() {
     <a
     className="desktopLineButton"
       href="https://lin.ee/Uc3LJUW"
-     onClick={(e) => {
-  e.preventDefault();
-
-  window.gtag?.("event", "line_click");
-
-  setTimeout(() => {
-    window.open(
-      "https://lin.ee/Uc3LJUw",
-      "_blank",
-      "noopener,noreferrer"
-    );
-  }, 300);
-}}
+     onClick={openLine}
       target="_blank"
       rel="noopener noreferrer"
       style={{
@@ -220,19 +210,7 @@ export default function Home() {
               <a
                className="desktopLineButton"
                 href="https://lin.ee/Uc3LJUW"
-                onClick={(e) => {
-  e.preventDefault();
-
- window.gtag?.("event", "line_click");
-
-  setTimeout(() => {
-    window.open(
-      "https://lin.ee/Uc3LJUw",
-      "_blank",
-      "noopener,noreferrer"
-    );
-  }, 300);
-}}
+                onClick={openLine}
   
                 target="_blank"
                 rel="noopener noreferrer"
