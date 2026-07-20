@@ -430,8 +430,11 @@ transition: "transform .25s ease, box-shadow .25s ease",
 
       <h3 style={{ textAlign: "center" }}> แจ้งเน็ตเสีย</h3>
 
-      <p style={{ color: "#666", textAlign: "center" }}>
-        โทร 1530 หรือ 1175 ตลอด 24 ชั่วโมง
+      <p  style={{ color: "#0f766e", textAlign: "center", fontWeight: "bold" }}> 
+      
+        
+        
+  โทร 1530 หรือ 1175 
       </p>
     </a>
 
