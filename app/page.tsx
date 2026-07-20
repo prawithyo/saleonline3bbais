@@ -372,7 +372,7 @@ export default function Home() {
     {/* เช็กพื้นที่ */}
     <a
       
-href="https://line.me/R/oaMessage/%40saleonline_LINE_ID/?สวัสดีครับ%0A%0Aต้องการตรวจสอบพื้นที่ติดตั้งอินเทอร์เน็ตบ้าน%0A%0A📍กรุณาส่งพิกัดบ้านหรือส่งลิงก์ Google Maps"
+href="https://lin.ee/Uc3LJUw"
       target="_blank"
       rel="noopener noreferrer"
       className="serviceCard"
