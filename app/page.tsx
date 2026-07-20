@@ -317,13 +317,13 @@ export default function Home() {
           text: "เหมาะทั้งเล่นเกม ดูหนัง และทำงาน",
         },
         {
-          icon: "💬",
-          title: "สมัครออนไลน์",
-          text: "สมัครผ่าน LINE ได้ตลอดเวลา",
+          icon: "📲 ",
+          title: "สมัครง่าย",
+          text: "ส่งเอกสารผ่าน LINE ไม่ต้องเดินทาง",
         },
         {
           icon: "🛠️",
-          title: "ติดตั้งภายใน 24 ",
+          title: "ติดตั้งภายใน 24 ชม. ",
           text: " ขึ้นอยู่กับพื้นที่ให้บริการและคิวติดตั้ง",
         },
       ].map((item) => (
@@ -385,11 +385,19 @@ href="https://lin.ee/Uc3LJUw"
         boxShadow: "0 10px 30px rgba(0,0,0,.08)",
       }}
     >
-      <div style={{ fontSize: "34px" }}>📍</div>
+      <div style={{
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    fontSize: "34px",
+    marginBottom: "16px",
+  }}
+>
+  📍</div>
 
-      <h3>📍 ตรวจสอบพื้นที่ติดตั้งฟรี</h3>
+      <h3 style={{ textAlign: "center" }}>📍 ตรวจสอบพื้นที่ติดตั้งฟรี</h3>
 
-      <p style={{ color: "#666" }}>
+      <p style={{ color: "#666", textAlign: "center" }}>
         ส่งพิกัดบ้านผ่าน LINE
 เพื่อตรวจสอบพื้นที่ให้บริการฟรี
       </p>
@@ -410,12 +418,20 @@ href="https://lin.ee/Uc3LJUw"
 transition: "transform .25s ease, box-shadow .25s ease",
       }}
     >
-      <div style={{ fontSize: "34px" }}>❌</div>
+      <div style={{
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    fontSize: "34px",
+    marginBottom: "16px",
+  }}
+>
+  🛠</div>
 
-      <h3>แจ้งเน็ตเสีย</h3>
+      <h3 style={{ textAlign: "center" }}> แจ้งเน็ตเสีย</h3>
 
-      <p style={{ color: "#666" }}>
-        โทร 1530 ตลอด 24 ชั่วโมง
+      <p style={{ color: "#666", textAlign: "center" }}>
+        โทร 1530 หรือ 1175 ตลอด 24 ชั่วโมง
       </p>
     </a>
 
@@ -432,11 +448,20 @@ transition: "transform .25s ease, box-shadow .25s ease",
         boxShadow: "0 10px 30px rgba(0,0,0,.08)",
       }}
     >
-      <div style={{ fontSize: "34px" }}>☎️</div>
+      <div style={{
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    fontSize: "34px",
+    marginBottom: "16px",
+  }}
+>
+  ☎️</div>
 
-      <h3>ติดต่อฝ่ายขาย</h3>
+      <h3 style={{ textAlign: "center" }}> ติดต่อฝ่ายขาย</h3>
 
-      <p style={{ color: "#666" }}>
+      <p style={{textAlign: "center", color: "#666" }}>
+        
         098-279-9863
       </p>
     </a>
@@ -456,11 +481,19 @@ transition: "transform .25s ease, box-shadow .25s ease",
         boxShadow: "0 10px 30px rgba(0,0,0,.08)",
       }}
     >
-      <div style={{ fontSize: "34px" }}>💬</div>
+      <div style={{
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    fontSize: "34px",
+    marginBottom: "16px",
+  }}
+>
+  💬</div>
 
-      <h3>สมัครผ่าน LINE</h3>
+      <h3 style={{ textAlign: "center" }}>สมัครผ่าน LINE</h3>
 
-      <p style={{ color: "#666" }}>
+      <p style={{ textAlign: "center", color: "#666" }}>
         เพิ่มเพื่อนและสมัครออนไลน์
       </p>
     </a>
