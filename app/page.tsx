@@ -78,11 +78,11 @@ export default function Home() {
         fontWeight: "600",
       }}
     >
-      <a href="#hero" style={{ color: "#222", textDecoration: "none" }}>
+      <a href="#hero" onClick={() => setMenuOpen(false)} style={{ color: "#222", textDecoration: "none" }}>
         หน้าแรก
       </a>
 
-      <a href="#packages" style={{ color: "#222", textDecoration: "none" }}>
+      <a href="#packages" onClick={() => setMenuOpen(false)}style={{ color: "#222", textDecoration: "none" }}>
         แพ็กเกจ
       </a>
 
@@ -91,6 +91,12 @@ export default function Home() {
    href="https://lin.ee/Uc3LJUw"
   target="_blank"
   rel="noopener noreferrer"
+  onClick={() => setMenuOpen(false)}
+  
+  
+  
+  
+  
   style={{ color: "#222", textDecoration: "none" }}
       >
         เช็กพื้นที่บริการ
@@ -243,6 +249,36 @@ export default function Home() {
                 โทรหาเรา
               </a>
             </div>
+            <div
+  style={{
+    marginTop: "18px",
+    display: "flex",
+    justifyContent: "flex-start",
+  }}
+>
+  <a
+    href="https://lin.ee/Uc3LJUw"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      display: "flex",
+      alignItems: "center",
+      gap: "10px",
+      border: "2px solid #16a34a",
+      borderRadius: "12px",
+      padding: "12px 22px",
+      color: "#16a34a",
+      textDecoration: "none",
+      fontSize: "16px",
+      fontWeight: "600",
+      background: "#ffffff",
+      boxShadow: "0 4px 12px rgba(22,163,74,.12)",
+    }}
+  >
+    <span style={{ fontSize: "20px" }}>💬</span>
+    ปรึกษาก่อนได้ ยังไม่ต้องสมัคร
+  </a>
+</div>
           </div>
 
           {/* ฝั่งขวา */}
