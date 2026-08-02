@@ -6,21 +6,20 @@ import { useState } from "react";
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
 
- const openLine = (e: React.MouseEvent<HTMLElement>) => {
-  e.preventDefault();
+  const openLine = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
 
-  console.log("LINE CLICK");
+    window.gtag?.("event", "line_click");
 
-  window.gtag?.("event", "line_click");
+    setTimeout(() => {
+      window.open(
+        "https://lin.ee/Uc3LJUw",
+        "_blank",
+        "noopener,noreferrer"
+      );
+    }, 300);
+  };
 
-  setTimeout(() => {
-    window.open(
-      "https://lin.ee/Uc3LJUw",
-      "_blank",
-      "noopener,noreferrer"
-    );
-  }, 300);
-};
   return (
     <main>
      
@@ -58,7 +57,7 @@ export default function Home() {
       />
     </a>
 <button
- onClick={openLine}
+ onClick={() => setMenuOpen(!menuOpen)}
   style={{
     fontSize: "30px",
     background: "none",
@@ -79,19 +78,26 @@ export default function Home() {
         fontWeight: "600",
       }}
     >
-      <a href="#hero" style={{ color: "#222", textDecoration: "none" }}>
+      <a href="#hero" onClick={() => setMenuOpen(false)} style={{ color: "#222", textDecoration: "none" }}>
         หน้าแรก
       </a>
 
-      <a href="#packages" style={{ color: "#222", textDecoration: "none" }}>
+      <a href="#packages" onClick={() => setMenuOpen(false)}style={{ color: "#222", textDecoration: "none" }}>
         แพ็กเกจ
       </a>
 
       <a
-        href="https://www.ais.th/consumers/package/internet/coverage"
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ color: "#222", textDecoration: "none" }}
+       
+   href="https://lin.ee/Uc3LJUw"
+  target="_blank"
+  rel="noopener noreferrer"
+  onClick={() => setMenuOpen(false)}
+  
+  
+  
+  
+  
+  style={{ color: "#222", textDecoration: "none" }}
       >
         เช็กพื้นที่บริการ
       </a>
@@ -243,6 +249,36 @@ export default function Home() {
                 โทรหาเรา
               </a>
             </div>
+            <div
+  style={{
+    marginTop: "18px",
+    display: "flex",
+    justifyContent: "flex-start",
+  }}
+>
+  <a
+    href="https://lin.ee/Uc3LJUw"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      display: "flex",
+      alignItems: "center",
+      gap: "10px",
+      border: "2px solid #16a34a",
+      borderRadius: "12px",
+      padding: "12px 22px",
+      color: "#16a34a",
+      textDecoration: "none",
+      fontSize: "16px",
+      fontWeight: "600",
+      background: "#ffffff",
+      boxShadow: "0 4px 12px rgba(22,163,74,.12)",
+    }}
+  >
+    <span style={{ fontSize: "20px" }}>💬</span>
+    ปรึกษาก่อนได้ ยังไม่ต้องสมัคร
+  </a>
+</div>
           </div>
 
           {/* ฝั่งขวา */}
@@ -317,14 +353,14 @@ export default function Home() {
           text: "เหมาะทั้งเล่นเกม ดูหนัง และทำงาน",
         },
         {
-          icon: "💬",
-          title: "สมัครออนไลน์",
-          text: "สมัครผ่าน LINE ได้ตลอดเวลา",
+          icon: "📲 ",
+          title: "สมัครง่าย",
+          text: "ส่งเอกสารผ่าน LINE ไม่ต้องเดินทาง",
         },
         {
           icon: "🛠️",
-          title: "ดูแลหลังการขาย",
-          text: "แจ้งเสียผ่าน 1530 ได้ 24 ชั่วโมง",
+          title: "ติดตั้งภายใน 24 ชม. ",
+          text: " ขึ้นอยู่กับพื้นที่ให้บริการและคิวติดตั้ง",
         },
       ].map((item) => (
         <div
@@ -371,7 +407,8 @@ export default function Home() {
   >
     {/* เช็กพื้นที่ */}
     <a
-      href="https://www.ais.th/consumers/package/internet/coverage"
+      
+href="https://lin.ee/Uc3LJUw"
       target="_blank"
       rel="noopener noreferrer"
       className="serviceCard"
@@ -384,12 +421,21 @@ export default function Home() {
         boxShadow: "0 10px 30px rgba(0,0,0,.08)",
       }}
     >
-      <div style={{ fontSize: "34px" }}>📍</div>
+      <div style={{
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    fontSize: "34px",
+    marginBottom: "16px",
+  }}
+>
+  📍</div>
 
-      <h3>เช็กพื้นที่บริการ</h3>
+      <h3 style={{ textAlign: "center" }}>📍 ตรวจสอบพื้นที่ติดตั้งฟรี</h3>
 
-      <p style={{ color: "#666" }}>
-        ตรวจสอบก่อนติดตั้งอินเทอร์เน็ต
+      <p style={{ color: "#666", textAlign: "center" }}>
+        ส่งพิกัดบ้านผ่าน LINE
+เพื่อตรวจสอบพื้นที่ให้บริการฟรี
       </p>
     </a>
 
@@ -408,12 +454,23 @@ export default function Home() {
 transition: "transform .25s ease, box-shadow .25s ease",
       }}
     >
-      <div style={{ fontSize: "34px" }}>❌</div>
+      <div style={{
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    fontSize: "34px",
+    marginBottom: "16px",
+  }}
+>
+  🛠</div>
 
-      <h3>แจ้งเน็ตเสีย</h3>
+      <h3 style={{ textAlign: "center" }}> แจ้งเน็ตเสีย</h3>
 
-      <p style={{ color: "#666" }}>
-        โทร 1530 ตลอด 24 ชั่วโมง
+      <p  style={{ color: "#0f766e", textAlign: "center", fontWeight: "bold" }}> 
+      
+        
+        
+  โทร 1530 หรือ 1175 
       </p>
     </a>
 
@@ -430,11 +487,20 @@ transition: "transform .25s ease, box-shadow .25s ease",
         boxShadow: "0 10px 30px rgba(0,0,0,.08)",
       }}
     >
-      <div style={{ fontSize: "34px" }}>☎️</div>
+      <div style={{
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    fontSize: "34px",
+    marginBottom: "16px",
+  }}
+>
+  ☎️</div>
 
-      <h3>ติดต่อฝ่ายขาย</h3>
+      <h3 style={{ textAlign: "center" }}> ติดต่อฝ่ายขาย</h3>
 
-      <p style={{ color: "#666" }}>
+      <p style={{textAlign: "center", color: "#666" }}>
+        
         098-279-9863
       </p>
     </a>
@@ -454,11 +520,19 @@ transition: "transform .25s ease, box-shadow .25s ease",
         boxShadow: "0 10px 30px rgba(0,0,0,.08)",
       }}
     >
-      <div style={{ fontSize: "34px" }}>💬</div>
+      <div style={{
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    fontSize: "34px",
+    marginBottom: "16px",
+  }}
+>
+  💬</div>
 
-      <h3>สมัครผ่าน LINE</h3>
+      <h3 style={{ textAlign: "center" }}>สมัครผ่าน LINE</h3>
 
-      <p style={{ color: "#666" }}>
+      <p style={{ textAlign: "center", color: "#666" }}>
         เพิ่มเพื่อนและสมัครออนไลน์
       </p>
     </a>
